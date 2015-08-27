@@ -53,14 +53,14 @@ $(document).ready(function(){
         	currentDate = new Date(2014, 8, currentDate.getDate()+1);
         	testData["data"] = datesData[currentDate.toISOString()];       	
         	heatmapLayer.setData(testData);
-        	$(".date").text(currentDate.toISOString());
+        	$(".date").text(currentDate.toISOString().split("T")[0]);
         	count++;
         	}
         	else {
         		currentDate = new Date(2014,8,2);
         		testData["data"] = datesData[currentDate.toISOString()];       	
         		heatmapLayer.setData(testData);
-        		 $(".date").text(currentDate.toISOString());
+        		 $(".date").text(currentDate.toISOString().split("T")[0]);
 
         		count = 0;
         	}
