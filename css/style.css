@@ -1,0 +1,23 @@
+body, html {
+ margin:0; 
+ padding:0; 
+ height:100%;
+}
+      body { 
+      	font-family:sans-serif; 
+      }
+      body * 
+      { font-weight:200;
+      }
+      h1 { 
+      	/*position:absolute;*/
+      	background:white; 
+      	padding:10px;
+      }
+      #map { 
+      	height:50%;
+      	margin-top:50px; 
+      }
+      .leaflet-container {
+        background: rgba(0,0,0,.8) !important;
+      }
